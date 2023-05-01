@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Gill Sans", sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 100px;
+    background-color:rgb(255, 187, 0);
+}
+.logotipo img {
+    height: 6rem;
+    max-width: 100px;
+    padding-inline: 0px;
+    
+}
+.lista ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+}
+.lista a {
+    text-decoration: solid;
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(0, 26, 255);
+    transition: color .10s;
+}
+.lista a:hover {
+    color:rgb(29, 20, 114);
+}
