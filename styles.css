@@ -1,24 +1,28 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: "Gill Sans", sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: #62d5f8;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding:5px;
     height: 100px;
-    background-color:rgb(255, 187, 0);
+    background: rgb(29, 253, 203);
+    background: linear-gradient(90deg, rgba(29, 253, 203, 1) 0%, rgba(131, 58, 180, 1) 100%, rgba(252, 176, 69, 1) 100%);
 }
+
 .logotipo img {
     height: 6rem;
     max-width: 100px;
     padding-inline: 0px;
-    
+
 }
+
 .lista ul {
     display: flex;
     flex-wrap: wrap;
@@ -27,13 +31,112 @@ body {
     padding: 0px;
     gap: 20px;
 }
+
 .lista a {
     text-decoration: solid;
     font-size: 25px;
     font-weight: bold;
-    color:rgb(0, 26, 255);
+    color: rgb(91, 228, 0);
     transition: color .10s;
+    -webkit-transition: color .10s;
+    -moz-transition: color .10s;
+    -ms-transition: color .10s;
+    -o-transition: color .10s;
 }
+
 .lista a:hover {
-    color:rgb(29, 20, 114);
+    color: rgb(29, 20, 114);
+}
+
+#portada {
+    background-color: #62d5f8;
+    width: 100%;
+}
+
+#portada .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#portada .texto {
+    max-width: 600px;
+    text-align: left;
+}
+
+#portada .texto h2 {
+    font-size: 38px;
+    margin: 15px 0;
+    color: rgb(157, 184, 5);
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+#portada .texto p {
+    font-size: 18px;
+    margin: 0;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #333;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#portada .boton {
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+    
+.boton:hover {
+    background-color: #3e8e41;
+}
+
+
+#portada .imagen {
+    max-width: 600px;
+    text-align: right;
+}
+
+#portada .imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+
+
+#info{
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #62d5f8;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+#info p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 5px 5px 5px #817d7d;
 }
