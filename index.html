@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franco Acosta </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 
 </head>
 <!-- SECCION DE ELECCION -->
@@ -16,12 +17,19 @@
         <div class="logotipo">
             <a href="#"><img src="./pngwing.com.png" alt="Logo Empresa"> </a>
         </div>
-        <nav class="lista">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Juegos</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Contactanos</a></li>
+        <nav class="navbar">
+
+            <label for="toggle-menu">
+                <img src="menu.png" class="menu">
+            </label>
+
+            <input type="checkbox" id="toggle-menu">
+
+            <ul class="navbar-list">
+                <li><a href="#" class="navbar-link">Inicio</a></li>
+                <li><a href="#" class="navbar-link">Juegos</a></li>
+                <li><a href="#" class="navbar-link">Clientes</a></li>
+                <li><a href="#" class="navbar-link">Contactanos</a></li>
             </ul>
         </nav>
     </header>
@@ -52,6 +60,43 @@
         <p>¡No pierdas la oportunidad de obtener más por tu dinero! Compra tus juegos en nuestra tienda en línea para disfrutar de beneficios exclusivos como descuentos adicionales y acceso a contenido extra.</p> 
     </section>
 
+    <section id="cuadrao">
+        <h2>Porque Comprar en Nuestra Pagina?</h2>
+        <div class="cuadrao-cards-container">
+        <div class="cuadrao-card">
+            <img src="./info/info-icon.png" alt="Icono NFTs" />
+            <h3>Beneficios en Compras</h3>
+            <p>
+            Cuando compres juegos en nuestra tienda empezaras a tener beneficios unicos para nuestros clientes.
+            </p>
+        </div>
+        <div class="cuadrao-card">
+            <img src="./info/info-icon.png" alt="Icono NFTs" />
+            <h3>Beneficios en Juegos</h3>
+            <p>
+            Para nuestros clientes tenemos los ultimos juegos disponibles en el Mercado.
+            </p>
+        </div>
+        <div class="cuadrao-card">
+            <img src="./info/info-icon.png" alt="Icono NFTs" />
+            <h3>¡Comunidad!</h3>
+            <p>
+            Cuando tengas tu cuenta, formáras parte de la comunidad de Gamer's Emporium y vas
+            a poder acceder a contenidos educativos exclusivos sobre el mundo
+            Gamers.
+            </p>
+        </div>
+        </div>
+    </section>
 </body>
-
+<footer>
+    <div>
+    <ul class="footer-links">
+        <li><a href="#">Términos de Uso</a></li>
+        <li><a href="#">Trabajá con Nosotros</a></li>
+        <li><a href="#">Soporte</a></li>
+    </ul>
+    </div>
+    <p>Hecho por <span>FrizkoLam</span></p>
+</footer>
 </html>

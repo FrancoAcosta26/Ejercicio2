@@ -3,39 +3,66 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Gill Sans", sans-serif;
-    background-color: #62d5f8;
+color: rgb(56, 44, 44);
+
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding:5px;
-    height: 100px;
+    height: 80px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
     background: rgb(29, 253, 203);
     background: linear-gradient(90deg, rgba(29, 253, 203, 1) 0%, rgba(131, 58, 180, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    position: fixed;
+    width: 100%;
+
+
+}
+
+main {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .logotipo img {
-    height: 6rem;
+
+    height: 5rem;
     max-width: 100px;
     padding-inline: 0px;
 
 }
 
-.lista ul {
+.navbar {
     display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    gap: 20px;
+
 }
 
-.lista a {
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.navbar img.menu {
+    font-size: 55px;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.navbar a {
+    justify-content: space-evenly;
     text-decoration: solid;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
     color: rgb(91, 228, 0);
     transition: color .10s;
     -webkit-transition: color .10s;
@@ -44,22 +71,24 @@ body {
     -o-transition: color .10s;
 }
 
-.lista a:hover {
+.navbar a:hover {
     color: rgb(29, 20, 114);
 }
 
 #portada {
     background-color: #62d5f8;
     width: 100%;
+    padding: 2%;
 }
 
 #portada .contenedor {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+
+    margin: 20;
     padding: 50px;
 }
 
@@ -69,6 +98,7 @@ body {
 }
 
 #portada .texto h2 {
+    display: flex;
     font-size: 38px;
     margin: 15px 0;
     color: rgb(157, 184, 5);
@@ -77,6 +107,7 @@ body {
 }
 
 #portada .texto p {
+    display: flex;
     font-size: 18px;
     margin: 0;
     color: #FFF;
@@ -87,7 +118,7 @@ body {
 }
 
 #portada .boton {
-    display: inline-block;
+    display: flex;
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -100,20 +131,23 @@ body {
     cursor: pointer;
     border-radius: 8px;
 }
-    
+
 .boton:hover {
+    display: flex;
     background-color: #3e8e41;
 }
 
 
 #portada .imagen {
+    display: flex;
     max-width: 600px;
     text-align: right;
 }
 
 #portada .imagen img {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
-    height: auto;
     border-radius: 5%;
     -webkit-border-radius: 5%;
     -moz-border-radius: 5%;
@@ -123,20 +157,105 @@ body {
 
 
 
-#info{
+#info {
+    display: inline-block;
+
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     background-color: #62d5f8;
-    padding: 20px;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 25vh;
     box-sizing: border-box;
 }
+
 #info p {
     font-size: 1.2rem;
     color: #ffffff;
     text-align: center;
     text-shadow: 5px 5px 5px #817d7d;
+}
+
+#cuadrao {
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#cuadrao h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.cuadrao-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.cuadrao-card {
+    width: 300px;
+    height: 290px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--secondary);
+    border-radius: 10px;
+    gap: 20px;
+    background-color: rgba(45, 177, 218, 0.678);
+}
+
+.cuadrao-card img {
+    width: 50px;
+}
+
+.cuadrao-card h3 {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: fantasy;
+}
+
+.cuadrao-card p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-gray);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+footer {
+    background: var(--background);
+    color: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+footer a,
+footer p {
+    color: var(--text-gray);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer span {
+    font-weight: 800;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
